@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Stile per l'header e la navigazione */
+header {
+    background-color: #001E36; /* Modificato come richiesto in precedenza */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Stile per il logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 30px; /* Ridotto come stabilito in precedenza */
+    width: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Aggiunto padding orizzontale */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Aggiunto per una spaziatura uniforme come nell'immagine di riferimento */
+}
+
+nav ul li {
+    margin-left: 0; /* Rimosso il margin poiché ora usiamo gap */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a:hover {
+    color: #e30613; /* Rosso Red Bull */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e30613;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 10px;
+    }
+    
+    .container {
+        width: 95%;
+    }
+}
