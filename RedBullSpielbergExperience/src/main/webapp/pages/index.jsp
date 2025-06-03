@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RedBull Spielberg Experience</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/jpeg" href="https://cdn-3.motorsport.com/images/mgl/Y99JQRbY/s8/red-bull-racing-logo-1.jpg">
 </head>
 <body>
 <!-- Audio per la loading screen -->
 <audio id="loading-sound" loop autoplay muted>
-    <source src="sounds/loading.mp3" type="audio/mpeg">
+    <source src="../sounds/loading.mp3" type="audio/mpeg">
 </audio>
 
 <!-- Loading Screen -->
@@ -45,6 +45,6 @@
     </div>
 </header>
 
-<script src="js/script.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
